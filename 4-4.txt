@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+
+	int K, k, x, y;
+
+	scanf_s("%d", &K);
+
+	for (k = 0; k <= K; k++) {
+		for (y = k; y >= 0; y--) {
+			printf("%d %d\n", k - y, y);
+		}
+	}
+
+	return 0;
+}
